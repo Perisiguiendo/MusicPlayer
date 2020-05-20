@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 播放器背景图片 -->
+    <div class="bg_box"></div>
+
+    <!-- 音乐播放器容器盒子 -->
+    <div class="music_box">
+        
+        <!-- 播放器头部标题 -->
+        <div class="header">
+            <span class="iconfont">&#xe6e2</span>
+            <span class="music_name">Cruel Summer</span>
+            <span class="iconfont">&#xe69d</span>
+        </div>
+
+        <!-- 模拟cd机 -->
+        <div class="cd">
+            <div class="cd_img" id="rainbow">
+                <img src="./images/disc-ip6.png">
+            </div>
+            <img src="./images/cartridge-ip6.png" id="cartridge" class="run">
+        </div>
+
+        <!-- 歌词区域 -->
+        <div class="lyric_row" id="music_lyric">
+            <span class="lyric_pre">歌手：Taylor Swift</span>
+            <span class="lyric_now">It's a cruel summer</span>
+            <span class="lyric_next">With you</span>
+        </div>
+
+        <!-- 进度条：显示播放时间 -->
+        <div class="time">
+            <!-- 音频时间 -->
+            <div class="time_box">
+                <span class="now_time">00:00</span>
+                <span class="total_time">02:58</span>
+            </div>
+            <!-- 音频播放进度条 -->
+            <div class="time_axis">
+                <div class="slider">
+                    <span class="progress_bar"></span>
+                    <div class="ahead_head"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 按钮（暂停、上一曲、下一曲、开关、音量调节、循环播放、收藏） -->
+        <div class="btn">
+            <span id="volume_toggle" class="iconfont" item="1">&#xe6e4;</span>
+            <span id="collection" class="iconfont">&#xe6eb;</span>
+            <span id="btn_pre" class="iconfont">&#xe6a5;</span>
+            <span id="btn_play" class="iconfont" item="0" onclick="start()">&#xe6a8;</span>
+            <span id="btn_next" class="iconfont">&#xe69f;</span>
+            <span id="loop_type" class="iconfont" item="2">&#xe69e;</span>
+            
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
